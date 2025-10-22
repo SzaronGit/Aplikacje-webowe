@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolorowe kwadraty</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content {
+            margin: 30px auto;
+            gap: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+        .square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #sq1 { background-color: red; }
+        #sq2 { background-color: green; }
+        #sq3 { background-color: blue; }
+        #sq4 { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"><span style="color: gray;">Kolorowe</span> kwadraty</h1>
+    <div class="content">
+        <div class="square" id="sq1"></div>
+        <div class="square" id="sq2"></div>
+    </div>
+    <div class="content">
+        <div class="square" id="sq3"></div>
+        <div class="square" id="sq4"></div>
+        <div class="square" >
+            <img src="images/kotek.jpg"  alt="Obrazek kota">
+        </div>
+    </div>
+</body>
+</html>
