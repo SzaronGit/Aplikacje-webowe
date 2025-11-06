@@ -1,0 +1,243 @@
+body {
+    background-color: darkkhaki;
+    margin: 0;
+}
+h1:hover #lay{
+    display: block!important;
+    background-image: url("images/layout.jpg");
+    opacity: 30%;
+    scale:3.8;
+    position: fixed;
+    left: 35%;
+    bottom: 20%;
+}
+
+header * {
+    -webkit-text-stroke: 10px black;
+    text-shadow: black 18px 18px 8px;
+    font-size: 100px;
+    font-family: sans-serif;
+    letter-spacing: 9px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 17px 0 17px;
+}
+.zegar{
+    color: gold;
+    font-family: "Linux Libertine Display G" sans-serif;
+    font-size: 50px;
+    left:2px;
+    padding-right: 250px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+.menu *{
+    display:flex;
+    padding: 15px 10px 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Lato";
+    background-color: #0000dd;
+    margin-top: 40px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    height: 70px;
+}
+.mobilenav {
+    color: white;
+    cursor: row-resize;
+    display: none;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    scale: 2;
+}
+
+
+@media(max-width: 765px) {
+    .mobilenav {
+        display: block;
+    }
+
+    .menu {
+        background-color: #0000dd;
+        border-left: 5px solid black;
+        top: 0;
+        height: 100vh;
+        right: 0;
+        width: 180px;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: center;
+    }
+
+    aside {
+        display: none;
+        padding: 0;
+    }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    background-color: blue;
+}
+
+.scrollup {
+    cursor: n-resize;
+    color: green;
+    position: fixed;
+    display: none;
+    right: 50px;
+    bottom: 50px;
+    scale: 4;
+}
+
+main{
+    display: flex;
+    /*padding-right: 280px;*/
+    /*margin: 0 auto;*/
+    /*max-width: 1000px;*/
+}
+aside {
+    height: calc(100% - 190px);
+    background-color: wheat;
+    padding: 90px;
+    text-align: center;
+    writing-mode: vertical-rl;
+}
+
+article {
+    margin: 30px 200px 0 20px;
+    text-align: justify;
+}
+
+.home{
+    font-size: 40px;
+    font-family: "Momo Trust Display", cursive;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.gallery {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.gallery * {
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+}
+#img1{transition: transform 0.5s ease-in-out}
+#img1:hover {transform: scale(1.2)}
+#img2{transition: transform 0.3s ease-in-out}
+#img2:hover {transform: scale(0.8)}
+#img4{transition: transform 0.3s ease-in-out}
+#img4:hover {transform: scale(0.9) rotate(5deg)}
+#img6{transition: transform 0.3s ease-in-out}
+#img6:hover {transform: scale(1.3) rotate(-20deg)}
+#img3{transition: transform 1s ease-in-out}
+#img3:hover {transform: scale(1.2) rotate(-360deg) skewX(15deg)}
+#img5{transition: transform 1s ease-in-out}
+#img5:hover {transform: scale(1.2) rotate(-360deg) skewX(15deg)}
+#img7{transition: transform 0.5s ease-in-out}
+#img7:hover {transform: scale(1.2,0.7)}
+#img8{transition: transform 0.5s ease-in-out}
+#img8:hover {transform: scale(0.8,1.3)}
+#img9 {transition: transform 1s ease-in-out;}
+#img9:hover {transform: skewY(40deg)}
+
+#img10 {transition: transform 1s ease-in-out;}
+#img10:hover {transform: matrix(1.2, 0.2, -1, 0.9, 0, 20) }
+#img11 {transition: transform 1s ease-out;}
+#img11:hover {transform: translateY(400px); }
+#img12 {transition: transform 0.5s ease-in-out;}
+#img12:hover {transform: translate(-40px, 200px) }
+#img13 {transition: transform 3s step-end }
+#img13:hover {cursor: wait; transform: skewY(20deg) }
+#img14 {transition: transform 3s step-end}
+#img14:hover {cursor: wait; transform: rotate(50deg) }
+#img15 {transition: transform 10s ease-in-out}
+#img15:hover {cursor: wait; transform: rotate(3600deg) }
+#img16 {transition: transform 4s ease-in-out}
+#img16:hover {cursor: wait; transform: translate3d(200%, -700%, 3000px) rotate(1000deg) skewX(50deg)}
+#img17 {transition: transform 10s ease-in-out}
+#img17:hover {cursor: crosshair; transform: rotateY(3600deg) }
+#img18 {transition: transform 10s ease-in-out}
+#img18:active {cursor: move; transform: rotateX(3600deg) translateY(500%)}
+
+.contact-main form{
+    font-size: 30px;
+    font-family: "Stack Sans Notch", sans-serif, bold;
+    color: darkslategrey;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding: 100px;
+    max-width:640px;
+}
+.contact-main input[type="text"],
+.contact-main select,
+.contact-main textarea{
+    padding:10px;border:1px solid #ddd;border-radius:6px;font-size:1rem;
+}
+.form-actions{display:flex;gap:10px;align-items:center}
+.btn{background:green;color:yellow;padding:10px 14px;border:none;border-radius:6px;cursor:pointer;text-decoration:none}
+.btn-outline{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+.small{font-size:0.85rem;color:var(--muted)}
+
+.site-wrapper{
+    max-width:var(--max-width);
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* CONTENT variaty pages */
+h4 {
+    color: darkslategrey;
+    font-family: "Lucida Sans Unicode" sans-serif;
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 50px;
+    text-shadow:
+}
+h3 {
+    color: darkred;
+    font-size: 30px;
+    font-family: "Momo-signature", cursive;
+}
+.content-grid{display:grid;grid-template-columns:1fr 20px;gap:20px;}
+.dictionary .entry{background-color: lightslategrey;opacity: 1 ;padding:14px;border-radius:8px;margin-bottom:12px; color: black}
+.dictionary .meta{font-size:1rem;color:black)}
+
+.site-main{
+    padding:24px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:24px;
+    align-items:start;
+}
